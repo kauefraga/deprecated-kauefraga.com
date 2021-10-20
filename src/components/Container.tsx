@@ -1,7 +1,10 @@
 import React from 'react'
-import { Flex as ChakraFlex, FlexProps as ChakraFlexProps } from '@chakra-ui/react'
+import {
+  Flex as ChakraFlex,
+  FlexProps as ChakraFlexProps
+} from '@chakra-ui/react'
 
-const Container: React.FC<ChakraFlexProps> = (props) => {
+const FlexContainer: React.FC<ChakraFlexProps> = (props) => {
   return (
     <ChakraFlex
       as="main"
@@ -13,5 +16,4 @@ const Container: React.FC<ChakraFlexProps> = (props) => {
     />
   )
 }
-
-export default Container;
+export default FlexContainer
