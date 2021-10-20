@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import { MongoClient, Db } from 'mongodb'
-import url from 'url'
 
 let cachedDb: Db = null
 
