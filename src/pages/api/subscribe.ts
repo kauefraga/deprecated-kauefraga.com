@@ -10,7 +10,7 @@ async function connectToDatabase(uri: string) {
   }
   const client = await MongoClient.connect(uri)
 
-  const dbName = url.parse(uri).pathname.substr(1)
+  const dbName = 'test'
   const db = client.db(dbName)
 
   cachedDb = db
