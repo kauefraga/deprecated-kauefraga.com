@@ -1,10 +1,21 @@
 // import Head from 'next/head'
+import { FormEvent, useState } from 'react'
 import { Heading, Grid, Flex, Link, Image, Button, Text } from '@chakra-ui/react'
+import axios from 'axios'
 import Divider from '../components/Divider'
 import EmailInput from '../components/EmailInput'
 import PasswordInput from '../components/PasswordInput'
 
-export default function Home() {
+export default function Login({ }) {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  function handleLogin(event: FormEvent) {
+    event.preventDefault()
+
+    axios.post('/api/login', { email, password })
+  }
+
   return (
     <Grid
       as="main"
@@ -32,19 +43,30 @@ export default function Home() {
       </Flex>
 
       <Flex
+        as="form"
         gridArea="form"
         height="100%"
         backgroundColor="gray.700"
         borderRadius="md"
         flexDirection="column"
         alignItems="stretch"
-
         padding={16}
+
+        onSubmit={handleLogin}
       >
 
-        <EmailInput />
+        <EmailInput
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          isRequired
+        />
 
-        <PasswordInput marginTop={2} />
+        <PasswordInput
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          marginTop={2}
+          isRequired
+        />
 
         <Link
           alignSelf="flex-start"
@@ -59,6 +81,7 @@ export default function Home() {
         </Link>
 
         <Button
+          type="submit"
           backgroundColor="purple.500"
           height="50px"
           borderRadius="sm"

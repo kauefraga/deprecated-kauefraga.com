@@ -3,7 +3,7 @@ import { Flex, Image, Button, Text } from '@chakra-ui/react'
 import Input from '../../components/Input'
 import axios from 'axios'
 
-export default function Home({ }) {
+export default function Newsletter({ }) {
   const [email, setEmail] = useState('')
 
   function handleSignUpToNewsletter(event: FormEvent) {

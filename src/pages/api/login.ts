@@ -9,7 +9,7 @@ async function connectToDatabase(uri: string) {
   }
   const client = await MongoClient.connect(uri)
 
-  const dbName = 'newsletter'
+  const dbName = 'login'
   const db = client.db(dbName)
 
   cachedDb = db
@@ -18,17 +18,18 @@ async function connectToDatabase(uri: string) {
 }
 
 export default async (request: NextApiRequest, response: NextApiResponse) => {
-  const { email } = request.body
+  const { email, password } = request.body
 
-  const db = await connectToDatabase(process.env.MONGODB_NEWSLETTER_URI)
+  const db = await connectToDatabase(process.env.MONGODB_LOGIN_URI)
 
-  const collection = db.collection('subscribers')
+  const collection = db.collection('users')
 
   await collection.insertOne({
     email,
+    password,
     subscribeAt: new Date()
   })
 
   console.log('[test] Emails has been inserted')
-  response.status(201).json({ ok: true })
+  response.status(201).redirect('/')
 }

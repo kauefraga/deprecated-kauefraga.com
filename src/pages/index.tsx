@@ -36,7 +36,7 @@ export default function Home({ }) {
       </Header>
       <FlexContainer flexDirection="column" color="gray.300">
         <Heading as="h1" fontSize="4xl" color="purple.600"> <Link target="_blank" href="https://github.com/kauefraga">Kauê Fraga Rodrigues</Link> </Heading>
-        <Heading as="h2" marginTop="5px" fontSize="3xl" color="gray.400">Fullstack engineer</Heading>
+        <Heading as="h2" marginTop="5px" fontSize="3xl" color="gray.300">Fullstack engineer</Heading>
 
         <Flex position="fixed" bottom="5">
           <Image marginRight="4" width="35px" height="45px" src="/icons/ts-icon.svg" alt="Typescript icon" />
