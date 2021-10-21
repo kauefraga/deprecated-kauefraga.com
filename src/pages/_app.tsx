@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Head>
         <title>Kauê Fraga</title>
-        <link rel="shortcut icon" href="https://github.com/kauefraga.png" />
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>

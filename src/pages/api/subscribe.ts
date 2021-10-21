@@ -9,7 +9,7 @@ async function connectToDatabase(uri: string) {
   }
   const client = await MongoClient.connect(uri)
 
-  const dbName = 'test'
+  const dbName = 'newsletter'
   const db = client.db(dbName)
 
   cachedDb = db
@@ -29,5 +29,6 @@ export default async (request: NextApiRequest, response: NextApiResponse) => {
     subscribeAt: new Date()
   })
 
+  console.log('[test] Emails has been inserted')
   response.status(201).json({ ok: true })
 }

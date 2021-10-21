@@ -39,11 +39,11 @@ export default function Home({ }) {
         <Heading as="h2" marginTop="5px" fontSize="3xl" color="gray.400">Fullstack engineer</Heading>
 
         <Flex position="fixed" bottom="5">
-          <Image marginRight="4" width="35px" height="45px" src="/ts-icon.svg" alt="Typescript icon" />
-          <Image marginRight="4" width="35px" height="45px" src="/nodejs-icon.svg" alt="Nodejs icon" />
-          <Image marginRight="4" width="50px" height="45px" src="/nextjs-icon.svg" alt="Nextjs icon" />
-          <Image marginRight="4" width="35px" height="45px" src="/reactjs-icon.svg" alt="Reactjs icon" />
-          <Image width="35px" height="45px" src="/electron-icon.svg" alt="Electron icon" />
+          <Image marginRight="4" width="35px" height="45px" src="/icons/ts-icon.svg" alt="Typescript icon" />
+          <Image marginRight="4" width="35px" height="45px" src="/icons/nodejs-icon.svg" alt="Nodejs icon" />
+          <Image marginRight="4" width="50px" height="45px" src="/icons/nextjs-icon.svg" alt="Nextjs icon" />
+          <Image marginRight="4" width="35px" height="45px" src="/icons/reactjs-icon.svg" alt="Reactjs icon" />
+          <Image width="35px" height="45px" src="/icons/electron-icon.svg" alt="Electron icon" />
         </Flex>
       </FlexContainer>
     </>
