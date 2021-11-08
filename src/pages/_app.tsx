@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
+        <meta name="description" content="Apenas um site pessoal. Autor: Kauê" />
         <title>Kauê Fraga</title>
       </Head>
       <Component {...pageProps} />

@@ -15,6 +15,9 @@ const radii = {
   md: '8px',
 }
 const colors = {
+  red: {
+    500: '#FF4033'
+  },
   purple: {
     500: '#8257e5',
   },

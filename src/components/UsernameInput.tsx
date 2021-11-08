@@ -4,11 +4,11 @@ import {
   InputProps as ChakraInputProps,
   Flex, Image,
 } from '@chakra-ui/react'
-import { EmailIcon } from '@chakra-ui/icons'
 
-const EmailInput: React.FC<ChakraInputProps> = (props) => {
+const UsernameInput: React.FC<ChakraInputProps> = (props) => {
   return (
     <Flex
+      marginTop={2}
       height="50px"
       backgroundColor="gray.800"
       focusBorderColor="purple.500"
@@ -16,14 +16,13 @@ const EmailInput: React.FC<ChakraInputProps> = (props) => {
       color="gray.600"
       alignItems="center"
     >
-      <EmailIcon marginLeft={4} />
+      <Image marginLeft={4} src="/icons/user.svg" alt="User" />
 
       <ChakraInput
         color="gray.300"
         fontSize="16px"
         border="none"
         focusBorderColor="none"
-        placeholder="Seu melhor e-mail"
         _placeholder={{ color: "gray.400" }}
         autoComplete="off"
         {...props}
@@ -33,4 +32,4 @@ const EmailInput: React.FC<ChakraInputProps> = (props) => {
   )
 }
 
-export default EmailInput
+export default UsernameInput

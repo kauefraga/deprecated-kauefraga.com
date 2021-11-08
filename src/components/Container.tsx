@@ -12,6 +12,7 @@ const FlexContainer: React.FC<ChakraFlexProps> = (props) => {
       justifyContent="center"
       alignItems="center"
       backgroundColor="gray.800"
+      color="grey.300"
       {...props}
     />
   )
