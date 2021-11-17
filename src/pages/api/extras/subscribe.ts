@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 
-import connectToDatabase from '../../services/databaseConnection'
+import connectToDatabase from '../../../services/databaseConnection'
 
 export default async (request: NextApiRequest, response: NextApiResponse) => {
   const { email } = request.body
