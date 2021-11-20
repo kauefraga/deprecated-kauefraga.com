@@ -10,7 +10,7 @@ export default function Newsletter({ }) {
   function handleSignUpToNewsletter(event: FormEvent) {
     event.preventDefault()
 
-    axios.post('/api/subscribe', { email })
+    axios.post('/api/newsletter/subscribe', { email })
   }
 
   return (
@@ -27,7 +27,7 @@ export default function Newsletter({ }) {
         width="100%"
         maxW="400px"
       >
-        <Heading textAlign="center" color="purple.500" marginBottom={4}>Inscrever-se na newsletter</Heading>
+        <Heading textAlign="center" color="purple.500" marginBottom={4}>Inscreva-se na newsletter</Heading>
 
         <Text textAlign="center" fontSize="sm" color="gray.400" marginBottom={4}>
           Assine a newsletter do Kauê Fraga
