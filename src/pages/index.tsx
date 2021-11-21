@@ -24,20 +24,10 @@ export default function InitialScreen({ }) {
           style={{ listStyle: "none" }}
         >
           <ListItem marginRight="7" fontSize="lg" color="gray.300">
-            <Link href="/extras/portfolio">Portfolio</Link>
+            <Link href="/portfolio">Portfolio</Link>
           </ListItem>
           <ListItem marginRight="7" fontSize="lg" color="gray.300">
-            <Link href="/contact">Contato</Link>
-          </ListItem>
-          <ListItem
-            backgroundColor="purple.500"
-            borderRadius="sm"
-            padding={2.5}
-            fontSize="xl"
-            color="gray.300"
-            _hover={{ backgroundColor: 'purple.600' }}
-          >
-            <Link href="/register">Cadastre-se</Link>
+            <Link href="/newsletter/">Newsletter</Link>
           </ListItem>
         </UnorderedList>
       </Flex>
