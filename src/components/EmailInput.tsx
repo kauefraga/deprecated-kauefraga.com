@@ -23,7 +23,6 @@ const EmailInput: React.FC<ChakraInputProps> = (props) => {
         fontSize="16px"
         border="none"
         focusBorderColor="none"
-        placeholder="Seu melhor e-mail"
         _placeholder={{ color: "gray.400" }}
         autoComplete="off"
         {...props}

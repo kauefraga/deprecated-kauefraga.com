@@ -33,14 +33,15 @@ export default function Newsletter({ }) {
           width="100%"
           maxW="400px"
         >
-          <Heading textAlign="center" color="purple.500" marginBottom={4}>Inscreva-se na newsletter</Heading>
+          <Heading textAlign="center" color="purple.500" marginBottom={4}>Subscribe in newsletter</Heading>
 
           <Text textAlign="center" fontSize="sm" color="gray.400" marginBottom={4}>
-            Assine a newsletter do Kauê Fraga
+            Subscribe into Kauê's newsletter to get sweet content.
           </Text>
 
           <EmailInput
             value={email}
+            placeholder="Your better email"
             onChange={event => setEmail(event.target.value)}
           />
 
@@ -52,7 +53,7 @@ export default function Newsletter({ }) {
             marginTop={6}
             _hover={{ backgroundColor: 'purple.600' }}
           >
-            INSCREVER
+            SUBSCRIBE
           </Button>
         </Flex>
       </FlexContainer>
