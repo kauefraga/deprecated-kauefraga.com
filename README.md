@@ -34,6 +34,22 @@ yarn || npm install
 yarn dev || npm dev
 ```
 
+## To do
+
+- [ ] Register
+  - [ ] Login
+  - [ ] Logout
+  - [ ] Sign up
+  - [ ] Forgot password
+- [ ] User page
+- [ ] Realtime chat
+  - [ ] Name support
+- [ ] Animes Catalog
+  - [ ] Sort
+  - [ ] Filter
+  - [ ] Search
+- [ ] Pt-Br translation
+
 ## 💻 Technologies
 
 - [Axios](https://npmjs.com/package/axios)
