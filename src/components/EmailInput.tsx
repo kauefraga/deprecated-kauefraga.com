@@ -2,7 +2,7 @@ import React from 'react'
 import {
   Input as ChakraInput,
   InputProps as ChakraInputProps,
-  Flex, Image,
+  Flex,
 } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 
@@ -25,6 +25,7 @@ const EmailInput: React.FC<ChakraInputProps> = (props) => {
         focusBorderColor="none"
         _placeholder={{ color: "gray.400" }}
         autoComplete="off"
+        inputMode="email"
         {...props}
       />
 
