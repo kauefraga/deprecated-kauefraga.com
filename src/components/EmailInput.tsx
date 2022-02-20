@@ -11,7 +11,6 @@ const EmailInput: React.FC<ChakraInputProps> = (props) => {
     <Flex
       height="50px"
       backgroundColor="gray.800"
-      focusBorderColor="purple.500"
       borderRadius="sm"
       color="gray.600"
       alignItems="center"
