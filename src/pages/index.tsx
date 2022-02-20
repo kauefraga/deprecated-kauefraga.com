@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Head from 'next/head'
 
 import { Link, Heading, ListItem, UnorderedList, Flex } from '@chakra-ui/react'
 import { IconSM, KaueGithubIcon } from '../components/Icons'
 import FlexContainer from '../components/Container'
 
-
 export default function InitialScreen({ }) {
-
   return (
     <>
       <Head>
