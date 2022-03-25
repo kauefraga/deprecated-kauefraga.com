@@ -21,7 +21,6 @@ const EmailInput: React.FC<ChakraInputProps> = (props) => {
         color="gray.300"
         fontSize="16px"
         border="none"
-        focusBorderColor="none"
         _placeholder={{ color: "gray.400" }}
         autoComplete="off"
         inputMode="email"
